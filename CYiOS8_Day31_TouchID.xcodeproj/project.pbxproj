@@ -14,6 +14,8 @@
 		DD366DD21B034F11009AC53B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD366DD11B034F11009AC53B /* Images.xcassets */; };
 		DD366DD51B034F11009AC53B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD366DD31B034F11009AC53B /* LaunchScreen.xib */; };
 		DD366DE11B034F11009AC53B /* CYiOS8_Day31_TouchIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD366DE01B034F11009AC53B /* CYiOS8_Day31_TouchIDTests.m */; };
+		DD366DEB1B0356EA009AC53B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD366DEA1B0356EA009AC53B /* Security.framework */; };
+		DD366DEE1B0368F8009AC53B /* CYSecureEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = DD366DED1B0368F8009AC53B /* CYSecureEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		DD366DDA1B034F11009AC53B /* CYiOS8_Day31_TouchIDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYiOS8_Day31_TouchIDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD366DDF1B034F11009AC53B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD366DE01B034F11009AC53B /* CYiOS8_Day31_TouchIDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYiOS8_Day31_TouchIDTests.m; sourceTree = "<group>"; };
+		DD366DEA1B0356EA009AC53B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DD366DEC1B0368F8009AC53B /* CYSecureEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYSecureEngine.h; sourceTree = "<group>"; };
+		DD366DED1B0368F8009AC53B /* CYSecureEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYSecureEngine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD366DEB1B0356EA009AC53B /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		DD366DB81B034F10009AC53B = {
 			isa = PBXGroup;
 			children = (
+				DD366DEA1B0356EA009AC53B /* Security.framework */,
 				DD366DC31B034F11009AC53B /* CYiOS8_Day31_TouchID */,
 				DD366DDD1B034F11009AC53B /* CYiOS8_Day31_TouchIDTests */,
 				DD366DC21B034F11009AC53B /* Products */,
@@ -85,6 +92,8 @@
 				DD366DC91B034F11009AC53B /* AppDelegate.m */,
 				DD366DCB1B034F11009AC53B /* ViewController.h */,
 				DD366DCC1B034F11009AC53B /* ViewController.m */,
+				DD366DEC1B0368F8009AC53B /* CYSecureEngine.h */,
+				DD366DED1B0368F8009AC53B /* CYSecureEngine.m */,
 				DD366DCE1B034F11009AC53B /* Main.storyboard */,
 				DD366DD11B034F11009AC53B /* Images.xcassets */,
 				DD366DD31B034F11009AC53B /* LaunchScreen.xib */,
@@ -219,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD366DEE1B0368F8009AC53B /* CYSecureEngine.m in Sources */,
 				DD366DCD1B034F11009AC53B /* ViewController.m in Sources */,
 				DD366DCA1B034F11009AC53B /* AppDelegate.m in Sources */,
 				DD366DC71B034F11009AC53B /* main.m in Sources */,
@@ -348,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CYiOS8_Day31_TouchID/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CYiOS8_Day31_TouchID/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +428,7 @@
 				DD366DE61B034F11009AC53B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD366DE71B034F11009AC53B /* Build configuration list for PBXNativeTarget "CYiOS8_Day31_TouchIDTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +437,7 @@
 				DD366DE91B034F11009AC53B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
